@@ -1,6 +1,10 @@
 # dungeoneration
 Simple terminal-based dungeon generation
 
+<p align="center">
+  <img src="https://github.com/Daxterapid/dungeoneration/raw/main/dungeon.png" width="40%" height="40%">
+</p>
+
 ## Motivation
 I wanted to create a small roguelike game for an Arduino using a MAX7219 (small 8x8 LED matrix) and a joystick, so I created this small algorithm. The game is still a work-in-progress.
 
