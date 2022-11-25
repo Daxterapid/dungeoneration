@@ -33,4 +33,4 @@ Display statistics:
 ```
 
 ## Bugs
-If you find any bugs, please open an issue or create a pull request!
+If you find any bugs or improvements, please open an issue or create a pull request!
