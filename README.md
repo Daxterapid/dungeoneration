@@ -2,7 +2,7 @@
 Simple terminal-based dungeon generation
 
 ## Motivation
-I wanted to create a small roguelike game for an Arduino with the MAX7219 (a small 8x8 LED matrix) and a joystick, so I created this small algorithm. The game is still a work-in-progress.
+I wanted to create a small roguelike game for an Arduino using a MAX7219 (small 8x8 LED matrix) and a joystick, so I created this small algorithm. The game is still a work-in-progress.
 
 ## Compiling
 With GCC (the `-O2` is optional):
