@@ -5,9 +5,14 @@ Simple terminal-based dungeon generation
 I wanted to create a small roguelike game for an Arduino using a MAX7219 (small 8x8 LED matrix) and a joystick, so I created this small algorithm. The game is still a work-in-progress.
 
 ## Compiling
-With GCC (the `-O2` is optional):
+### GCC
+Regular version:
 ```
 gcc -o main main.c -O2
+```
+Old (worse) algorithm:
+```
+gcc -o main main.c -O2 -DUSE_WORSE_GENERATION
 ```
 
 ## Usage
