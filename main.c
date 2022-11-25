@@ -99,6 +99,9 @@ grow_board(uint8_t *board, uint8_t *room_positions, uint8_t n_positions,
 		uint8_t n_choices = 0;
 		for (uint8_t i = 1; i < 16; i++) {
 			if ((mask >> i & 1) == 0) {
+#ifdef USE_WORSE_GENERATION
+				id_choices[n_choices++] = i;
+#else
 				if (r_empty || d_empty || l_empty || u_empty) {
 					bool e_open = i >> 0 & 1;
 					bool s_open = i >> 1 & 1;
@@ -112,6 +115,7 @@ grow_board(uint8_t *board, uint8_t *room_positions, uint8_t n_positions,
 				} else {
 					id_choices[n_choices++] = i;
 				}
+#endif
 			}
 		}
 
